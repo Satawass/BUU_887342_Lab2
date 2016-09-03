@@ -31,9 +31,14 @@ public class Rec {
     /** = a copy of s with to_remove_char removed.
 		Example: removeChar("abeabe", 'e') = "abab". */
 	public static String removeChar(String s, char to_remove_char) {
-	
-	// fill me in
-	
+	char remove = to_remove_char;
+	String removelaw ="";
+	for (int i = 0;i<s.length();i++){
+		if(s.charAt(i)!=remove){
+		removelaw = removelaw+s.charAt(i);
+		}
+		}
+		return removelaw;
 	}
 	
     /** = a copy of s with characters in reverse order.
